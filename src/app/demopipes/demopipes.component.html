@@ -1,20 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
 </head>
-
 <body>
-  <div class="container-fluid">
-    <app-page></app-page>
-    <app-secpage></app-secpage>
-    <app-thirdpage></app-thirdpage>
-    <app-demopipes></app-demopipes>
+  <div>
+    {{title|uppercase}} <br>
+    {{today|date:'fullDate'|uppercase}} <br>
+    {{user.name|custpipes:user.name}}
   </div>
-</body>
 
+</body>
 </html>
